@@ -1,0 +1,86 @@
+:root{
+  --primary: rgb(184, 182, 182);
+  --secondary: rgb(0, 117, 255);
+}
+
+header{
+  background-color: var(--primary);
+  height: 30vh;
+  align-items: center;
+  justify-content: end;
+}
+
+header section{
+  padding-right: 6em;
+  /* background-color: blue; */
+}
+
+.align-image{
+  padding: 0 8em 0 2em;
+}
+
+
+/* take note of specificity in this case - this overrides the blue above - see specificity calculator*/
+/* section.text-end{
+  background-color: red;
+} */
+
+/* position absolute takes the element out of the DOM flow and positions it to it's closest ancestor */
+img{
+  width: 15em;
+  height: 15em;
+  border: solid 3px var(--secondary);
+  transform: translateY(50px);
+  /* position: absolute; */
+  top: 6em;
+  right: 6em;
+}
+
+h2{
+  background-color: var(--primary);
+  display: inline-block;
+  color: white;
+  padding: .3em;
+  margin-bottom: .3em;
+}
+
+body{
+  margin: 0;
+}
+
+.skills{
+  padding-top: 1.5em;
+}
+
+.left-column{
+  width: 60%;
+  margin-top: 2em;
+}
+
+.right-column{
+  width: 40%;
+  margin: 7em 0 0 2em
+}
+
+/* UTILITY CLASSES */
+/* #region */
+.d-flex{
+  display: flex;
+}
+
+.text-end{
+  text-align: end;
+}
+
+.text-start{
+  text-align: start;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.no-padding{
+  padding: 0;
+}
+/* #endregion */
